@@ -86,7 +86,6 @@ The following image shows a test case of the **Dhokla** food item. The model cor
 - **Dhokla** is a popular Indian steamed food made from fermented rice and chickpea flour. The model successfully classified this food item as **Dhokla**.
   
   **Predicted Label:** Dhokla  
-  **Model Confidence:** 92%
 
 ## Future Improvements
 - **Expand the Dataset**: Add more food categories to improve the model’s accuracy and versatility.
