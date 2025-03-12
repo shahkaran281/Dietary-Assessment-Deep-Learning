@@ -1,10 +1,11 @@
+
 # Dietary Assessment Using Deep Learning
 
 ## Overview
 
 This project utilizes deep learning to classify food items from images and provides a dietary assessment. The system takes images of food, processes them using Convolutional Neural Networks (CNN), and returns nutritional information like calories, fat, carbohydrates, and protein. This project leverages **MobileNetV2** for food recognition, providing high accuracy with minimal computational overhead.
 
-### Key Features
+## Key Features
 - **Image-Based Food Classification**: Recognizes multiple food items from images taken by the user.
 - **Nutritional Assessment**: Provides detailed nutritional information such as calories, fats, proteins, and carbohydrates for each recognized food item.
 - **Mobile-Friendly Model**: The MobileNetV2 model is lightweight and optimized for mobile devices, enabling fast and accurate classification.
@@ -25,7 +26,7 @@ To get started, clone this repository and set up the environment:
 ### Step 1: Clone the repository
 
 ```bash
-git clone https://github.com:shahkaran281/Dietary-Assessment-Deep-Learning.git
+git clone https://github.com/shahkaran281/Dietary-Assessment-Deep-Learning.git
 cd Dietary-Assessment-Deep-Learning
 ```
 
@@ -64,8 +65,30 @@ The dataset used in this project is the **Food20 Dataset**, a collection of 20 p
 
 The model has achieved a classification accuracy of **92%** on the test set, and it can classify images with high precision. The results can be visualized using graphs showing the training and validation accuracy/loss, as well as the confusion matrix.
 
-## Future Improvements
+### Training and Validation Metrics
 
+The following graph shows the **training and validation accuracy** and **training and validation loss** over the course of model training:
+
+![Training and Validation Metrics](model-performance-graph.png)
+
+#### Explanation:
+- The **training accuracy** increases steadily over time, reflecting the model's learning process.
+- The **validation accuracy** stabilizes, indicating how well the model is generalizing to unseen data.
+- The **training loss** decreases, showing that the model is minimizing error during training, while the **validation loss** also decreases, indicating good model generalization.
+
+### Dhokla Image (Test Case)
+
+The following image shows a test case of the **Dhokla** food item. The model correctly identifies Dhokla from the input image and shows the caloric infomation.
+
+![Dhokla Test Image](dhokla-result-image.png)
+
+#### Explanation:
+- **Dhokla** is a popular Indian steamed food made from fermented rice and chickpea flour. The model successfully classified this food item as **Dhokla**.
+  
+  **Predicted Label:** Dhokla  
+  **Model Confidence:** 92%
+
+## Future Improvements
 - **Expand the Dataset**: Add more food categories to improve the model’s accuracy and versatility.
 - **Real-time Mobile App**: Develop a mobile app that utilizes the trained model for real-time food classification using the phone's camera.
 - **Personalized Recommendations**: Incorporate user-specific dietary suggestions based on their food preferences and health metrics such as age, weight, and BMI.
